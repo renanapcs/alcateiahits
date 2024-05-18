@@ -1,0 +1,61 @@
+
+body::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0.075);
+  }
+  
+  /* Firefox */
+body::-moz-scrollbar {
+    background-color: rgba(207, 207, 207, 0.101);
+  }
+
+
+
+/* Chrome, Safari e Opera */
+::-webkit-scrollbar {
+    width: none;
+    background-color: rgba(0, 0, 0, 0.063);
+}
+
+
+
+
+/* Firefox */
+::-moz-scrollbar {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+#iframe::-webkit-scrollbar {
+    width: 1px; /* Largura da barra de rolagem */
+    background-color: rgba(0, 0, 0, 0.063);
+}
+
+#iframe::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0); /* Cor da alça da barra de rolagem */
+}
+#iframe {
+    border: none; 
+    width: 100%; 
+    height: 660px;
+    scroll-behavior: auto;
+}
+
+
+
+#copy {
+    color: rgba(81, 192, 159, 0.515);
+}
+
+#index-banner {
+    background-color: rgba(15, 17, 17, 0.719);
+    padding: 20px;
+    height: 100%;
+  }
+  #bg-img {
+    background-image: url('/src/img/bg-img.png');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+ 
+  }
+  .light-blue-text {
+      filter: invert(1);
+  }
