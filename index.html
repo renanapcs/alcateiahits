@@ -26,21 +26,30 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5X4TMPX"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-  <!--NavBar-->
+  <!-- NavBar -->
   <nav class="grey darken-2">
-    <div class="nav-wrapper container"><a id="logo-container" href="." class="brand-logo"><img id="logo-container"  style="height: 50px; margin: 5px;" src="./src/img/loboalpha80px.png"/></a>
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="." class="brand-logo">
+            <img id="logo-container" style="height: 50px; margin: 5px;" src="./src/img/loboalpha80px.png"/>
+        </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a class="waves-effect waves-light btn" href="https://wa.me/5511982679018">Contato</a></li>
+            <li><a class="waves-effect waves-light btn" href="https://wa.me/5511982679018">Contato</a></li>
+            <li><a class="wave-effect" href="https://alcateia.pagtickets.com.br">Eventos</a></li>
+            <li><a class="wave-effect">Casting</a></li>
         </ul>
-        <ul class="right hide-on-med-and-down">
-          <li><a class="wave-effect" href="https://alcateia.pagtickets.com.br">Eventos</a></li>
-        </ul>
-        <ul class="right hide-on-med-and-down">
-          <li><a class="wave-effect ">Casting</a></li>
-        </ul>
+    </div>
+</nav>
 
-      </div>
-  </nav>
+<!-- Sidenav para mobile -->
+<ul class="sidenav" id="mobile-demo">
+    <li><a class="waves-effect waves-light btn" href="https://wa.me/5511982679018">Contato</a></li>
+    <li><a class="wave-effect" href="https://alcateia.pagtickets.com.br">Eventos</a></li>
+    <li><a class="wave-effect">Casting</a></li>
+</ul>
+
+
+
   <!--Conteudo-->
   <section id="bg-img"  >
   <main id="index-banner">
@@ -119,7 +128,15 @@
   </footer>
 
 <script src="/src/js/index.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+      // Inicializa o sidenav
+      document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.sidenav');
+          var instances = M.Sidenav.init(elems);
+      });
+  </script>
 </body>
 
 </html>
